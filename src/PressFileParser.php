@@ -46,15 +46,14 @@ class PressFileParser
 
     protected function explodeData()
     {
-
         if (strpos($this->rawData[1], "\r\n") !== false) {
             $explodedData = explode("\r\n", trim($this->rawData[1]));
         } elseif (strpos($this->rawData[1], "\n") !== false) {
-            $explodedData = "\n";
+            $explodedData = explode("\n", trim($this->rawData[1]));
         } elseif (strpos($this->rawData[1], "\r") !== false) {
-            $explodedData = "\r";
+            $explodedData = explode("\r", trim($this->rawData[1]));
         }else{
-            $explodedData = $this->rawData[1];
+            $explodedData = explode("", trim($this->rawData[1]));
         }
 
         foreach ($explodedData as $fieldString) {
