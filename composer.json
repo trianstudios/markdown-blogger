@@ -1,11 +1,13 @@
 {
   "name": "trianstudios/press",
   "description": "An elegant markdown-powered blog for the laravel framework",
+  "keywords": ["framework", "laravel", "package", "blogger", "markdown"],
+  "homepage": "https://github.com/trianstudios/markdown-blogger",
   "license": "MIT",
   "authors": [
     {
-      "name": "trianstudios",
-      "email": "trianstudios@gmail.com"
+      "homepage": "https://trianstudios.com",
+      "name": "Trian Studios"
     }
   ],
   "require-dev": {
@@ -20,8 +22,7 @@
   "autoload-dev": {
     "psr-4": {
       "trianstudios\\Press\\Tests\\": "tests/",
-      "trianstudios\\Press\\Database\\Factories\\": "database/factories/",
-      "trianstudios\\Press\\Database\\Seeders\\": "database/seeders/"
+      "trianstudios\\Press\\Database\\Factories\\": "database/factories/"
     }
   },
   "require": {
@@ -30,14 +31,10 @@
     "ext-json": "*",
     "laravel/legacy-factories": "^1.1"
   },
-  "scripts": {
-    "test": "vendor/bin/phpunit",
-    "test-f": "vendor/bin/phpunit --filter"
-  },
   "extra": {
     "laravel": {
       "providers": [
-        "trianstudios\\Press\\PressBaseServiceProvide"
+        "trianstudios\\Press\\PressBaseServiceProvider"
       ]
     }
   }
