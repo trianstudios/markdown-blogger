@@ -4,5 +4,5 @@ A markdown powered blog post creator package
 ## Installation
 
 ```shell
-composer require allansun/openapi-runtime
+composer require trianstudios/press
 ```
