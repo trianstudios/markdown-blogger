@@ -1,7 +1,13 @@
 {
   "name": "trianstudios/press",
   "description": "An elegant markdown-powered blog for the laravel framework",
-  "keywords": ["framework", "laravel", "package", "blogger", "markdown"],
+  "keywords": [
+    "framework",
+    "laravel",
+    "package",
+    "blogger",
+    "markdown"
+  ],
   "homepage": "https://github.com/trianstudios/markdown-blogger",
   "license": "MIT",
   "authors": [
@@ -37,5 +43,6 @@
         "trianstudios\\Press\\PressBaseServiceProvider"
       ]
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
